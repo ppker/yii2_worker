@@ -1,0 +1,308 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: "\e151";
+}
+
+a.desc:after {
+    content: "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view td {
+    white-space: nowrap;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+    min-width: 50px;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+
+/* this is my socket chat */
+
+div.chat {
+    overflow: hidden;
+    margin-top: 40px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width: 800px;
+    height: 600px;
+}
+
+div.chat div.sidebar {
+    height: 100%;
+}
+
+div.sidebar {
+    width: 200px;
+    color: #f4f4f4;
+    background-color: #2e3238;
+}
+
+div.m_card {
+    padding: 9pt;
+    border-bottom: 1px solid #24272c;
+}
+
+img.avatar {
+    border-radius: 2px;
+    vertical-align: middle;
+}
+div.m_name {
+    display: inline-block;
+    margin: 0 0 0 15px;
+    font-size: 1pt;
+    vertical-align: middle;
+}
+div.m_footer {
+    margin-top: 10px;
+
+}
+.m_card .search {
+    padding: 0 10px;
+    width: 100%;
+    font-size: 9pt;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #3a3a3a;
+    border-radius: 4px;
+    outline: 0;
+    background-color: #26292e;
+}
+ul {
+    list-style: none;
+}
+.g_list ul li.active {
+    background-color: #41b883;
+}
+
+.g_list ul li {
+    padding: 9px 15px;
+    border-bottom: 1px solid #292c33;
+    cursor: pointer;
+    -webkit-transition: background 0.1s;
+    -moz-transition: background 0.1s;
+    -ms-transition: background 0.1s;
+    -o-transition: background 0.1s;
+    transition: background 0.1s;
+}
+
+.g_list ul li:hover {
+    background-color: #254e46;
+}
+
+div.main {
+    position: relative;
+    overflow: hidden;
+    background-color: #eee;
+    height: 100%;
+}
+
+div.m_message {
+    height: calc(100% - 10pc);
+    padding: 10px 15px;
+    overflow-y: scroll;
+}
+
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.m_message ul li {
+    margin-bottom: 15px;
+}
+
+.m_message .time {
+    margin: 7px 0;
+    text-align: center;
+}
+
+.m_message .time>span {
+    display: inline-block;
+    padding: 0 18px;
+    font-size: 9pt;
+    color: #fff;
+    border-radius: 2px;
+    background-color: #dcdcdc;
+}
+
+div.m_message img.avatar {
+    float: left;
+    margin: 0 10px 0 0;
+    border-radius: 3px;
+}
+
+div.m_message div.text {
+    display: inline-block;
+    position: relative;
+    padding: 0 10px;
+    max-width: calc(100% - 40px);
+    min-height: 30px;
+    line-height: 2.5;
+    font-size: 9pt;
+    text-align: left;
+    word-break: break-all;
+    background-color: #fafafa;
+    border-radius: 4px;
+}
+
+div.m_message div.self {
+    text-align: right;
+}
+
+div.m_message div.self img.avatar {
+    float: right;
+    margin: 0 0 0 10px;
+}
+
+div.m_message div.self .text {
+    background-color: #b2e281;
+}
+
+div.main div.m_text {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+div.m_text {
+    height: 10pc;
+    border-top: 1px solid #ddd;
+}
+
+div.main div.m_text textarea {
+    padding: 10px;
+    height: calc(100% - 2.5pc);
+    width: 100%;
+    border: none;
+    outline: 0;
+    font-family: Micrsofot Yahei;
+    resize: none;
+}
+
+body {
+    color: #4d4d4d;
+    background: #f5f5f5 url('../img/it_company.jpg') no-repeat center;
+    background-size: cover;
+}
+
+button#b_submit {
+    float: right;
+    position: relative;
+    left: -15px;
+    bottom: -3px;
+    width: 70px;
+    height: 24px;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+button#b_submit:hover {
+    background-color: #41b883;
+}
